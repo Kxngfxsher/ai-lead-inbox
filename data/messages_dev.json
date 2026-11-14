@@ -1,0 +1,279 @@
+[
+  {
+    "id": "dev-01",
+    "channel": "site_form",
+    "sender": "Форма «Заказать замер»",
+    "subject": null,
+    "body": "Здравствуйте! Нужен кондиционер в спальню 18 м², желательно инверторный и тихий. Бюджет до 55 000 руб. вместе с установкой. Можете приехать на замер на этой неделе? Анна, +7 (900) 000-00-11",
+    "minutes_ago": 7,
+    "seed_status": "new",
+    "expected": {"category": "lead", "urgency": "normal", "name": "Анна", "phone": "+79000000011", "email": null, "company": null, "budget_rub": 55000}
+  },
+  {
+    "id": "dev-02",
+    "channel": "email",
+    "sender": "d.orlov@example.com",
+    "subject": "Запрос КП на вентиляцию офиса",
+    "body": "Добрый день.\n\nООО «Вектор-Плюс» открывает офис 240 м² на 30 рабочих мест, нужна приточно-вытяжная вентиляция и 6 кондиционеров. Просим подготовить коммерческое предложение до пятницы. Бюджет ориентировочно 1,2 млн руб.\n\nС уважением, Дмитрий Орлов, руководитель АХО\nтел. 8 900 000 00 12",
+    "minutes_ago": 300,
+    "seed_status": "answered",
+    "response_minutes": 11,
+    "expected": {"category": "lead", "urgency": "normal", "name": "Дмитрий Орлов", "phone": "+79000000012", "email": "d.orlov@example.com", "company": "ООО «Вектор-Плюс»", "budget_rub": 1200000}
+  },
+  {
+    "id": "dev-03",
+    "channel": "telegram",
+    "sender": "@sergey_k",
+    "subject": null,
+    "body": "Добрый день! Заказ №4517, монтаж был назначен на завтра с 10 до 14. Можно перенести на субботу? Сергей",
+    "minutes_ago": 1500,
+    "seed_status": "answered",
+    "response_minutes": 7,
+    "expected": {"category": "support", "urgency": "normal", "name": "Сергей", "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-04",
+    "channel": "email",
+    "sender": "elena.v@example.com",
+    "subject": "Претензия по монтажу",
+    "body": "Вчера ваши монтажники установили сплит-систему (договор 2291), а сегодня с внутреннего блока течёт вода прямо на ламинат. Звонила на горячую линию трижды — никто не перезвонил. Требую срочно прислать мастера и компенсировать испорченное покрытие, иначе буду писать в Роспотребнадзор.\n\nЕлена Викторовна, 8-900-000-00-14",
+    "minutes_ago": 9,
+    "seed_status": "new",
+    "expected": {"category": "complaint", "urgency": "high", "name": "Елена Викторовна", "phone": "+79000000014", "email": "elena.v@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-05",
+    "channel": "email",
+    "sender": "promo@example.net",
+    "subject": "Вывод сайта в ТОП-10 за 14 дней",
+    "body": "Здравствуйте! Мы проанализировали ваш сайт и нашли 27 ошибок, мешающих продвижению. Раскрутка сайта с гарантией: первые клиенты уже через неделю. Скидка 50% только до конца месяца! Ответьте на это письмо, и мы пришлём аудит бесплатно.",
+    "minutes_ago": 240,
+    "seed_status": "new",
+    "expected": {"category": "spam", "urgency": "low", "name": null, "phone": null, "email": "promo@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-06",
+    "channel": "email",
+    "sender": "buh@example.org",
+    "subject": "Акт сверки за 3 квартал",
+    "body": "Добрый день! Просьба направить акт сверки взаиморасчётов за 3 квартал и закрывающие документы по счёту № 318 от 14.09. Оригиналы можно отправить через ЭДО.\n\nБухгалтер ООО «Сигма-Трейд» Ольга Ким",
+    "minutes_ago": 2800,
+    "seed_status": "answered",
+    "response_minutes": 95,
+    "reply_note": "Акт сверки и закрывающие документы направили через ЭДО.",
+    "expected": {"category": "billing", "urgency": "normal", "name": "Ольга Ким", "phone": null, "email": "buh@example.org", "company": "ООО «Сигма-Трейд»", "budget_rub": null}
+  },
+  {
+    "id": "dev-07",
+    "channel": "email",
+    "sender": "partners@example.net",
+    "subject": "Оптовые поставки медной трубы и фреона",
+    "body": "Добрый день! Наша компания — прямой импортёр расходных материалов для климатической техники. Предлагаем вам оптовые поставки медной трубы, теплоизоляции и хладагентов R32/R410A с отсрочкой платежа до 30 дней. Прайс-лист во вложении. Готовы обсудить дилерские условия.\n\nМенеджер по работе с партнёрами Артём, +7 900 000-00-17",
+    "minutes_ago": 1900,
+    "seed_status": "answered",
+    "response_minutes": 600,
+    "expected": {"category": "partnership", "urgency": "low", "name": "Артём", "phone": "+79000000017", "email": "partners@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-08",
+    "channel": "email",
+    "sender": "ruslan.m@example.com",
+    "subject": "Резюме: монтажник систем кондиционирования",
+    "body": "Здравствуйте! Увидел, что вы расширяете бригады. Опыт работы монтажником 6 лет, есть допуск к высотным работам и свой инструмент. Резюме прилагаю. Готов выйти на стажировку с понедельника.\n\nРуслан, 8 (900) 000-00-18",
+    "minutes_ago": 3400,
+    "seed_status": "answered",
+    "response_minutes": 1300,
+    "expected": {"category": "hr", "urgency": "low", "name": "Руслан", "phone": "+79000000018", "email": "ruslan.m@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-09",
+    "channel": "whatsapp",
+    "sender": "+7 900 000-00-19",
+    "subject": null,
+    "body": "Добрый вечер, срочно нужен кондиционер в детскую, жара невыносимая, ребёнок не спит. Есть что-то в наличии с установкой завтра или послезавтра? Цена вопроса до 70 тыс. Игорь",
+    "minutes_ago": 2,
+    "seed_status": "new",
+    "expected": {"category": "lead", "urgency": "high", "name": "Игорь", "phone": "+79000000019", "email": null, "company": null, "budget_rub": 70000}
+  },
+  {
+    "id": "dev-10",
+    "channel": "email",
+    "sender": "marina77@example.com",
+    "subject": "Как включить режим обогрева",
+    "body": "Здравствуйте. Купили у вас в сентябре кондиционер, сейчас похолодало, а на пульте не можем найти режим обогрева. Подскажите, пожалуйста, как его включить и до какой температуры на улице можно им пользоваться. Спасибо!\n\nМарина",
+    "minutes_ago": 1700,
+    "seed_status": "answered",
+    "response_minutes": 24,
+    "expected": {"category": "support", "urgency": "normal", "name": "Марина", "phone": null, "email": "marina77@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-11",
+    "channel": "site_form",
+    "sender": "Форма «Обратный звонок»",
+    "subject": null,
+    "body": "Интересует обслуживание 12 кондиционеров в стоматологической клинике: чистка и дозаправка два раза в год. Пришлите, пожалуйста, расчёт стоимости договора на обслуживание. Клиника «Дента-Люкс», администратор Светлана, тел. 8 900 000-00-21, info@example.com",
+    "minutes_ago": 33,
+    "seed_status": "new",
+    "expected": {"category": "lead", "urgency": "normal", "name": "Светлана", "phone": "+79000000021", "email": "info@example.com", "company": "Клиника «Дента-Люкс»", "budget_rub": null}
+  },
+  {
+    "id": "dev-12",
+    "channel": "telegram",
+    "sender": "@gost_1988",
+    "subject": null,
+    "body": "Третий раз пишу!!! Мастер должен был приехать на гарантийный ремонт ещё в понедельник, сегодня четверг. Кондиционер не работает, деньги заплачены. Если до завтра вопрос не решите — требую возврат денег. Заказ 4402.",
+    "minutes_ago": 26,
+    "seed_status": "new",
+    "expected": {"category": "complaint", "urgency": "high", "name": null, "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-13",
+    "channel": "site_form",
+    "sender": "Форма «Вопрос по заказу»",
+    "subject": null,
+    "body": "Здравствуйте, подскажите статус заказа №4530 — оплатили в прошлую пятницу, обещали позвонить и согласовать дату монтажа, но пока тишина. Спасибо. Павел, 89000000023",
+    "minutes_ago": 38,
+    "seed_status": "new",
+    "expected": {"category": "support", "urgency": "normal", "name": "Павел", "phone": "+79000000023", "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-14",
+    "channel": "email",
+    "sender": "nikolay@example.com",
+    "subject": "Тепловой насос для дома",
+    "body": "Здравствуйте. Строим дом 160 м² в Подмосковье, заселяться планируем в следующем году. Пока присматриваюсь к вариантам отопления: рассматриваю тепловой насос воздух-вода. Сколько примерно стоит такое решение под ключ и есть ли у вас реализованные объекты? Не срочно.\n\nНиколай",
+    "minutes_ago": 1100,
+    "seed_status": "answered",
+    "response_minutes": 9,
+    "expected": {"category": "lead", "urgency": "low", "name": "Николай", "phone": null, "email": "nikolay@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-15",
+    "channel": "email",
+    "sender": "credit-offer@example.net",
+    "subject": "Вам одобрен кредит для бизнеса",
+    "body": "Уважаемый предприниматель! Вам предварительно одобрен кредит без залога и поручителей до 5 000 000 рублей. Перейдите по ссылке и получите деньги уже сегодня. Количество предложений ограничено!",
+    "minutes_ago": 900,
+    "seed_status": "new",
+    "expected": {"category": "spam", "urgency": "low", "name": null, "phone": null, "email": "credit-offer@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-16",
+    "channel": "email",
+    "sender": "gromov@example.org",
+    "subject": "Оплата счёта №402",
+    "body": "Добрый день, оплатили счёт №402 от 02.11 на 184 500 руб., платёжное поручение во вложении. Прошу подтвердить поступление оплаты и выставить счёт-фактуру.\n\nИП Громов А.С.",
+    "minutes_ago": 3000,
+    "seed_status": "answered",
+    "response_minutes": 130,
+    "expected": {"category": "billing", "urgency": "normal", "name": null, "phone": null, "email": "gromov@example.org", "company": "ИП Громов А.С.", "budget_rub": null}
+  },
+  {
+    "id": "dev-17",
+    "channel": "telegram",
+    "sender": "@anon_user",
+    "subject": null,
+    "body": "Здравствуйте! А сколько стоит установка кондиционера, если кондиционер уже куплен? Трасса примерно 4 метра, 7 этаж, нужен альпинист или с балкона можно?",
+    "minutes_ago": 11,
+    "seed_status": "new",
+    "expected": {"category": "lead", "urgency": "normal", "name": null, "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-18",
+    "channel": "email",
+    "sender": "k.belova@example.org",
+    "subject": "Сотрудничество: размещение в каталоге застройщика",
+    "body": "Здравствуйте! Мы — застройщик ЖК «Речной квартал». Ищем партнёра по кондиционированию для включения в каталог рекомендованных подрядчиков для наших жильцов (480 квартир, сдача в марте). Предлагаем обсудить условия сотрудничества на встрече.\n\nКсения Белова, отдел партнёрских программ, 8 900 000 00 28",
+    "minutes_ago": 2300,
+    "seed_status": "answered",
+    "response_minutes": 240,
+    "reply_note": "Предлагаем созвониться в среду в 11:00 и обсудить условия.",
+    "expected": {"category": "partnership", "urgency": "normal", "name": "Ксения Белова", "phone": "+79000000028", "email": "k.belova@example.org", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-19",
+    "channel": "email",
+    "sender": "viktor@example.com",
+    "subject": "Не привезли пульт",
+    "body": "Здравствуйте. Позавчера установили кондиционер, всё работает, но пульт в комплект не положили, а монтажник сказал, что довезут. Прошло два дня, никто не звонил. Хотелось бы понять, когда привезут.\n\nВиктор, +7 900 000 00 29",
+    "minutes_ago": 21,
+    "seed_status": "new",
+    "expected": {"category": "complaint", "urgency": "normal", "name": "Виктор", "phone": "+79000000029", "email": "viktor@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-20",
+    "channel": "email",
+    "sender": "alina.student@example.com",
+    "subject": "Опрос для дипломной работы",
+    "body": "Здравствуйте! Я студентка, пишу диплом о рынке климатической техники. Не могли бы вы ответить на 5 вопросов о сезонности спроса? Это займёт 10 минут. Заранее спасибо!\n\nАлина",
+    "minutes_ago": 2000,
+    "seed_status": "answered",
+    "response_minutes": 400,
+    "expected": {"category": "other", "urgency": "low", "name": "Алина", "phone": null, "email": "alina.student@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-21",
+    "channel": "site_form",
+    "sender": "Форма «Заказать замер»",
+    "subject": null,
+    "body": "Нужно 3 сплит-системы в квартиру-новостройку (2 спальни по 14 м² и гостиная 25 м²), ремонт на этапе штробления, поэтому монтаж в два этапа. Бюджет 200–250 тысяч. Когда сможете приехать на замер? Екатерина, +7-900-000-00-31, kate@example.com",
+    "minutes_ago": 200,
+    "seed_status": "answered",
+    "response_minutes": 6,
+    "expected": {"category": "lead", "urgency": "normal", "name": "Екатерина", "phone": "+79000000031", "email": "kate@example.com", "company": null, "budget_rub": 250000}
+  },
+  {
+    "id": "dev-22",
+    "channel": "email",
+    "sender": "tamara@example.org",
+    "subject": "Шум в наружном блоке",
+    "body": "Добрый день. Кондиционер, который вы ставили в мае, начал шуметь при включении — какой-то треск в наружном блоке. Он на гарантии. Как вызвать мастера для диагностики? Договор № 1984.\n\nТамара Ивановна, 8 900 000 00 32",
+    "minutes_ago": 1300,
+    "seed_status": "answered",
+    "response_minutes": 31,
+    "reply_note": "Мастер приедет на диагностику в четверг с 10:00 до 13:00.",
+    "expected": {"category": "support", "urgency": "normal", "name": "Тамара Ивановна", "phone": "+79000000032", "email": "tamara@example.org", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-23",
+    "channel": "email",
+    "sender": "sales-db@example.net",
+    "subject": "База для обзвона",
+    "body": "Здравствуйте! Продаём актуальную базу клиентов вашего города: 40 000 номеров телефонов владельцев недвижимости. Идеально для холодных звонков и рассылки. Цена 9 900 руб. Пишите!",
+    "minutes_ago": 1200,
+    "seed_status": "new",
+    "expected": {"category": "spam", "urgency": "low", "name": null, "phone": null, "email": "sales-db@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-24",
+    "channel": "email",
+    "sender": "admin@example.org",
+    "subject": "Срочно: кондиционер в серверную",
+    "body": "Коллеги, добрый день! В серверной вышел из строя кондиционер, температура растёт. Нужна замена на прецизионный или хотя бы мощный сплит на 7 кВт сегодня-завтра. Оплата по счёту, бюджет согласован — до 300 000 руб.\n\nЖду звонка: Антон, системный администратор ООО «Логистик-Про», +7 900 000 00 34",
+    "minutes_ago": 4,
+    "seed_status": "new",
+    "expected": {"category": "lead", "urgency": "high", "name": "Антон", "phone": "+79000000034", "email": "admin@example.org", "company": "ООО «Логистик-Про»", "budget_rub": 300000}
+  },
+  {
+    "id": "dev-25",
+    "channel": "email",
+    "sender": "glavbuh@example.org",
+    "subject": "Перевыставить счёт №377",
+    "body": "Здравствуйте! В счёте №377 указаны старые реквизиты нашей организации — мы сменили КПП и юридический адрес. Прошу перевыставить счёт, карточку предприятия прикладываю.\n\nГлавный бухгалтер Наталья Сергеевна",
+    "minutes_ago": 1600,
+    "seed_status": "answered",
+    "response_minutes": 75,
+    "expected": {"category": "billing", "urgency": "normal", "name": "Наталья Сергеевна", "phone": null, "email": "glavbuh@example.org", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "dev-26",
+    "channel": "email",
+    "sender": "daria@example.com",
+    "subject": "Стажировка в отделе продаж",
+    "body": "Добрый день! Рассматриваете ли вы студентов на стажировку в отдел продаж? Учусь на 4 курсе, готова работать неполный день. Резюме отправлю по запросу.\n\nДарья",
+    "minutes_ago": 2600,
+    "seed_status": "answered",
+    "response_minutes": 900,
+    "expected": {"category": "hr", "urgency": "low", "name": "Дарья", "phone": null, "email": "daria@example.com", "company": null, "budget_rub": null}
+  }
+]

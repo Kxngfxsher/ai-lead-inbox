@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hold-01",
+    "channel": "whatsapp",
+    "sender": "+7 900 000-00-41",
+    "subject": null,
+    "body": "здрасте, кондей нужен в однушку, комната 20 метров. че по ценам? и сколько ждать установку",
+    "expected": {"category": "lead", "urgency": "normal", "name": null, "phone": "+79000000041", "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-02",
+    "channel": "email",
+    "sender": "a.sokolov@example.com",
+    "subject": "Качество работ по договору №2310",
+    "body": "Добрый день. Обращаюсь по поводу качества работ по договору №2310. После монтажа на фасаде осталась незаделанная штроба и повреждён отлив окна. Фото прилагаю. Прошу устранить недостатки в течение 10 дней, как предусмотрено законом о защите прав потребителей.\n\nАндрей Соколов, 8 900 000 00 42",
+    "expected": {"category": "complaint", "urgency": "normal", "name": "Андрей Соколов", "phone": "+79000000042", "email": "a.sokolov@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-03",
+    "channel": "telegram",
+    "sender": "@lena_home",
+    "subject": null,
+    "body": "Добрый день! На кондиционере мигает зелёная лампочка и он не охлаждает. Что это значит? Покупали у вас в июле.",
+    "expected": {"category": "support", "urgency": "normal", "name": null, "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-04",
+    "channel": "email",
+    "sender": "timur.cafe@example.com",
+    "subject": "Кондиционеры для кафе",
+    "body": "Здравствуйте, открываем кафе на 60 посадочных мест, зал 110 квадратов плюс кухня. Нужен проект и монтаж кондиционирования и вытяжки. Открытие через полтора месяца. Просьба связаться: Тимур, 8-900-000-00-44",
+    "expected": {"category": "lead", "urgency": "normal", "name": "Тимур", "phone": "+79000000044", "email": "timur.cafe@example.com", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-05",
+    "channel": "email",
+    "sender": "job-online@example.net",
+    "subject": "Доход от 150 000 в месяц",
+    "body": "Привет! Хотите зарабатывать от 150 000 рублей в месяц, не выходя из дома? Всего 2 часа в день. Обучение бесплатно, мест осталось мало. Жмите на ссылку!",
+    "expected": {"category": "spam", "urgency": "low", "name": null, "phone": null, "email": "job-online@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-06",
+    "channel": "email",
+    "sender": "buh@example.com",
+    "subject": "Оригиналы УПД за октябрь",
+    "body": "Добрый день! Нам для налоговой нужны оригиналы УПД за октябрь, по ЭДО пришли только сканы. Можете отправить курьером или почтой?\n\nООО «Меридиан», бухгалтерия",
+    "expected": {"category": "billing", "urgency": "normal", "name": null, "phone": null, "email": "buh@example.com", "company": "ООО «Меридиан»", "budget_rub": null}
+  },
+  {
+    "id": "hold-07",
+    "channel": "email",
+    "sender": "hello@example.net",
+    "subject": "Сервис онлайн-записи для монтажных бригад",
+    "body": "Добрый день! Мы разработали CRM-систему специально для сервисных компаний: планирование выездов бригад, маршруты, оплата по QR. Предлагаем бесплатный тестовый период 30 дней и скидку для первых клиентов в вашем регионе. Удобно будет созвониться на этой неделе?",
+    "expected": {"category": "partnership", "urgency": "low", "name": null, "phone": null, "email": "hello@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-08",
+    "channel": "site_form",
+    "sender": "Форма «Написать нам»",
+    "subject": null,
+    "body": "Здравствуйте, у вас на сайте висит вакансия менеджера по продажам. Она ещё актуальна? Какая зарплата и график?",
+    "expected": {"category": "hr", "urgency": "low", "name": null, "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-09",
+    "channel": "telegram",
+    "sender": "@max_auto",
+    "subject": null,
+    "body": "Сколько стоит заправка кондиционера фреоном?",
+    "expected": {"category": "lead", "urgency": "normal", "name": null, "phone": null, "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-10",
+    "channel": "site_form",
+    "sender": "Форма «Написать нам»",
+    "subject": null,
+    "body": "Здравствуйте! Хочу записаться на плановую чистку кондиционера по сервисному договору № 77, в прошлом году делали в апреле. Есть свободные даты на следующей неделе? Вера, +7 900 000 00 50",
+    "expected": {"category": "support", "urgency": "normal", "name": "Вера", "phone": "+79000000050", "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-11",
+    "channel": "whatsapp",
+    "sender": "+7 900 000-00-51",
+    "subject": null,
+    "body": "Вы издеваетесь? Обещали перезвонить в течение часа, прошло два дня. Монтаж сорван, я взял отгул зря. Больше с вашей конторой дел иметь не хочу.",
+    "expected": {"category": "complaint", "urgency": "high", "name": null, "phone": "+79000000051", "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-12",
+    "channel": "email",
+    "sender": "office@example.org",
+    "subject": "Вопрос про бизнес-центр на Садовой",
+    "body": "Добрый день! Подскажите, пожалуйста, это вы устанавливали кондиционеры в бизнес-центре на Садовой? Хотим узнать контакты управляющей компании здания.",
+    "expected": {"category": "other", "urgency": "low", "name": null, "phone": null, "email": "office@example.org", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-13",
+    "channel": "email",
+    "sender": "zakupki@example.org",
+    "subject": "Приглашение к участию в тендере",
+    "body": "Добрый день. АО «Северные магистрали» проводит закупку на поставку и монтаж 40 сплит-систем для административного здания. Начальная цена контракта 3,8 млн руб. Заявки принимаются до 28 ноября. Документация по ссылке в закупочной системе.\n\nКонтактное лицо: Ирина Павлова, тел. 8 900 000 00 53",
+    "expected": {"category": "lead", "urgency": "normal", "name": "Ирина Павлова", "phone": "+79000000053", "email": "zakupki@example.org", "company": "АО «Северные магистрали»", "budget_rub": 3800000}
+  },
+  {
+    "id": "hold-14",
+    "channel": "site_form",
+    "sender": "Форма «Вопрос по заказу»",
+    "subject": null,
+    "body": "Здравствуйте, с карты дважды списали оплату за заказ 4488 — 38 900 и ещё раз 38 900. Верните, пожалуйста, лишнее списание. Чек прикладываю. Лариса, 89000000054",
+    "expected": {"category": "billing", "urgency": "high", "name": "Лариса", "phone": "+79000000054", "email": null, "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-15",
+    "channel": "email",
+    "sender": "support@example.net",
+    "subject": "Ваш домен будет заблокирован",
+    "body": "Уважаемый клиент! Срок регистрации вашего домена истекает через 24 часа. Во избежание блокировки сайта срочно оплатите продление по ссылке. Служба поддержки регистратора.",
+    "expected": {"category": "spam", "urgency": "low", "name": null, "phone": null, "email": "support@example.net", "company": null, "budget_rub": null}
+  },
+  {
+    "id": "hold-16",
+    "channel": "site_form",
+    "sender": "Форма «Заказать монтаж»",
+    "subject": null,
+    "body": "Добрый день! Меня зовут Олег, хотел бы заказать монтаж двух кондиционеров, которые уже купил (на 9 и 12 тыс. BTU). Квартира на 3 этаже, наружные блоки под окна. Примерный бюджет на монтаж — 30 т.р. Перезвоните после 18:00, 8 (900) 000-00-56.",
+    "expected": {"category": "lead", "urgency": "normal", "name": "Олег", "phone": "+79000000056", "email": null, "company": null, "budget_rub": 30000}
+  }
+]

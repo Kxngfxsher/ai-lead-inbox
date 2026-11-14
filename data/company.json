@@ -1,0 +1,19 @@
+{
+  "name": "Прохлада-Сервис",
+  "legal_name": "ООО «Прохлада-Сервис»",
+  "profile": "продажа, монтаж и сервисное обслуживание кондиционеров и вентиляции для квартир, домов и офисов",
+  "work_hours": "ежедневно с 9:00 до 20:00",
+  "signature": "С уважением, команда «Прохлада-Сервис»",
+  "hot_lead_score": 70,
+  "hot_lead_sla_minutes": 10,
+  "queues": {
+    "lead": {"queue": "Отдел продаж", "assignee": "Мария К.", "sla_minutes": 15},
+    "support": {"queue": "Сервисная служба", "assignee": "Игорь П.", "sla_minutes": 60},
+    "complaint": {"queue": "Руководитель сервиса", "assignee": "Олег В.", "sla_minutes": 30},
+    "billing": {"queue": "Бухгалтерия", "assignee": "Нина А.", "sla_minutes": 240},
+    "partnership": {"queue": "Закупки и партнёры", "assignee": "Роман Д.", "sla_minutes": 1440},
+    "hr": {"queue": "Отдел персонала", "assignee": "Алла С.", "sla_minutes": 2880},
+    "spam": {"queue": "Архив", "assignee": null, "sla_minutes": null, "auto_archive": true},
+    "other": {"queue": "Офис-менеджер", "assignee": "Юлия Т.", "sla_minutes": 480}
+  }
+}

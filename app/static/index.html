@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Умный входящий поток · демо</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>Умный входящий поток</h1>
+        <p class="brand-sub">Демо · вымышленная компания «<span id="company">…</span>»</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="engine" id="engine">…</span>
+      <button class="btn" id="btn-simulate" type="button">Смоделировать входящее</button>
+      <button class="btn primary" id="btn-new" type="button">Новое обращение</button>
+    </div>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <section class="stats" id="stats" aria-label="Показатели"></section>
+
+  <main class="layout">
+    <aside class="inbox" aria-label="Список обращений">
+      <div class="inbox-tools">
+        <div class="tabs" id="tabs"></div>
+        <input type="search" id="search" placeholder="Поиск по тексту и отправителю" aria-label="Поиск по обращениям">
+      </div>
+      <ul class="items" id="items"></ul>
+    </aside>
+    <section class="detail" id="detail" aria-live="polite"></section>
+  </main>
+
+  <footer class="foot">
+    <span>Все компании, имена и контакты в демо вымышлены.</span>
+    <span class="foot-links">
+      <button class="link" id="btn-reset" type="button">Сбросить демо-данные</button>
+      <a class="link" href="/api/docs" target="_blank" rel="noopener">Документация API</a>
+    </span>
+  </footer>
+
+  <dialog id="dlg-new" class="dialog">
+    <form id="form-new">
+      <h2>Новое обращение</h2>
+      <p class="hint">Вставьте текст письма или сообщения. Система разберёт его так же, как настоящее входящее.</p>
+      <div class="form-row">
+        <label>Канал
+          <select name="channel">
+            <option value="email">E-mail</option>
+            <option value="site_form">Форма на сайте</option>
+            <option value="telegram">Telegram</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </label>
+        <label>Отправитель
+          <input name="sender" required maxlength="200" placeholder="адрес, номер или ник">
+        </label>
+      </div>
+      <label>Тема (необязательно)
+        <input name="subject" maxlength="300">
+      </label>
+      <label>Текст обращения
+        <textarea name="body" required rows="7" maxlength="20000"></textarea>
+      </label>
+      <p class="form-error" id="new-error" hidden></p>
+      <div class="dialog-actions">
+        <button class="btn" type="button" id="new-cancel">Отмена</button>
+        <button class="btn primary" type="submit" id="new-submit">Разобрать</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
